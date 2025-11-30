@@ -15,8 +15,10 @@ GameObject:
   - component: {fileID: 8933982132680611006}
   - component: {fileID: 1533276307}
   - component: {fileID: 7534019431398612272}
-  - component: {fileID: 2452946736930997942}
   - component: {fileID: -2566140579094082919}
+  - component: {fileID: 7622992578329012083}
+  - component: {fileID: 6733406881541063990}
+  - component: {fileID: -3991386272799220680}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -132,7 +134,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chaseRange: 25
   turnSpeed: 5
-  walkingSound: {fileID: 8300000, guid: 47379e63fa1e78f459cdb10576fc65fb, type: 3}
+  damage: 40
+  provokedSound: {fileID: 8300000, guid: 7de3e3c5695d01b47a7f36f41571d39f, type: 3}
+  idleSound: {fileID: 8300000, guid: d4445e941c486354a8b11ff3ae87d379, type: 3}
 --- !u!114 &1533276307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,21 +172,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2452946736930997942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8933982132680611007}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 624623648b7819e4eb820889f5be3409, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 40
-  provokedSound: {fileID: 8300000, guid: 7de3e3c5695d01b47a7f36f41571d39f, type: 3}
-  idleSound: {fileID: 8300000, guid: d4445e941c486354a8b11ff3ae87d379, type: 3}
 --- !u!82 &-2566140579094082919
 AudioSource:
   m_ObjectHideFlags: 0
@@ -279,6 +268,76 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7622992578329012083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8933982132680611007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 6733406881541063990}
+  - {fileID: -3991386272799220680}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &6733406881541063990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8933982132680611007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowLayerWeightsInspector: 1
+  ShowParameterInspector: 1
+  m_SynchronizeParameters:
+  - Type: 9
+    SynchronizeType: 1
+    Name: Idle
+  - Type: 9
+    SynchronizeType: 1
+    Name: Move
+  - Type: 4
+    SynchronizeType: 1
+    Name: Attack
+  - Type: 9
+    SynchronizeType: 1
+    Name: Die
+  m_SynchronizeLayers:
+  - SynchronizeType: 0
+    LayerIndex: 0
+--- !u!114 &-3991386272799220680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8933982132680611007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1001 &7670098771415594076
 PrefabInstance:
   m_ObjectHideFlags: 0

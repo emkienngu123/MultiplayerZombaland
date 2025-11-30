@@ -55,10 +55,19 @@ public class PlayerHealth : MonoBehaviourPun
             audioSource.PlayOneShot(hitSound);
         }
 
+
+        if (photonView.IsMine)
+        {
+            GetComponent<DamageDisplayer>().ShowDamageImpact();
+        }
+
+
+
         if (hitPoints <= 0)
         {
             Die();
         }
+
     }
 
 

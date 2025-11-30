@@ -840,7 +840,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponContainer: {fileID: 7693857048940150297}
   currentWeapon: 0
-  weaponSwitchSound: {fileID: 0}
+  weaponSwitchSound: {fileID: 8300000, guid: 857bf8a6db6a55f49864c540d6cb893d, type: 3}
 --- !u!1 &2200694348575809538
 GameObject:
   m_ObjectHideFlags: 0

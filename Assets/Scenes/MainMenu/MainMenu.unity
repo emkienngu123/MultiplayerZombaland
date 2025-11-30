@@ -383,6 +383,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1346217231}
     m_Modifications:
+    - target: {fileID: 6733406881541063990, guid: e9b057fd01bf5d048bf11d61d63d3278, type: 3}
+      propertyPath: m_SynchronizeLayers.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6733406881541063990, guid: e9b057fd01bf5d048bf11d61d63d3278, type: 3}
+      propertyPath: m_SynchronizeParameters.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7622992578329012083, guid: e9b057fd01bf5d048bf11d61d63d3278, type: 3}
+      propertyPath: sceneViewId
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7622992578329012083, guid: e9b057fd01bf5d048bf11d61d63d3278, type: 3}
+      propertyPath: ObservedComponents.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8933982132680610977, guid: e9b057fd01bf5d048bf11d61d63d3278, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1189,6 +1205,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1346217231}
     m_Modifications:
+    - target: {fileID: 6733406881541063990, guid: e9b057fd01bf5d048bf11d61d63d3278, type: 3}
+      propertyPath: m_SynchronizeLayers.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6733406881541063990, guid: e9b057fd01bf5d048bf11d61d63d3278, type: 3}
+      propertyPath: m_SynchronizeParameters.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7622992578329012083, guid: e9b057fd01bf5d048bf11d61d63d3278, type: 3}
+      propertyPath: sceneViewId
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7622992578329012083, guid: e9b057fd01bf5d048bf11d61d63d3278, type: 3}
+      propertyPath: ObservedComponents.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8933982132680610977, guid: e9b057fd01bf5d048bf11d61d63d3278, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2397,6 +2429,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1346217231}
     m_Modifications:
+    - target: {fileID: 6733406881541063990, guid: e9b057fd01bf5d048bf11d61d63d3278, type: 3}
+      propertyPath: m_SynchronizeLayers.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6733406881541063990, guid: e9b057fd01bf5d048bf11d61d63d3278, type: 3}
+      propertyPath: m_SynchronizeParameters.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7622992578329012083, guid: e9b057fd01bf5d048bf11d61d63d3278, type: 3}
+      propertyPath: sceneViewId
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7622992578329012083, guid: e9b057fd01bf5d048bf11d61d63d3278, type: 3}
+      propertyPath: ObservedComponents.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8933982132680610977, guid: e9b057fd01bf5d048bf11d61d63d3278, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -6120,6 +6168,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1346217231}
     m_Modifications:
+    - target: {fileID: 6733406881541063990, guid: e9b057fd01bf5d048bf11d61d63d3278, type: 3}
+      propertyPath: m_SynchronizeLayers.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6733406881541063990, guid: e9b057fd01bf5d048bf11d61d63d3278, type: 3}
+      propertyPath: m_SynchronizeParameters.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7622992578329012083, guid: e9b057fd01bf5d048bf11d61d63d3278, type: 3}
+      propertyPath: sceneViewId
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7622992578329012083, guid: e9b057fd01bf5d048bf11d61d63d3278, type: 3}
+      propertyPath: ObservedComponents.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8933982132680610977, guid: e9b057fd01bf5d048bf11d61d63d3278, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -6181,6 +6245,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1346217231}
     m_Modifications:
+    - target: {fileID: 6733406881541063990, guid: e9b057fd01bf5d048bf11d61d63d3278, type: 3}
+      propertyPath: m_SynchronizeLayers.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6733406881541063990, guid: e9b057fd01bf5d048bf11d61d63d3278, type: 3}
+      propertyPath: m_SynchronizeParameters.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7622992578329012083, guid: e9b057fd01bf5d048bf11d61d63d3278, type: 3}
+      propertyPath: sceneViewId
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7622992578329012083, guid: e9b057fd01bf5d048bf11d61d63d3278, type: 3}
+      propertyPath: ObservedComponents.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8933982132680610977, guid: e9b057fd01bf5d048bf11d61d63d3278, type: 3}
       propertyPath: m_RootOrder
       value: 4

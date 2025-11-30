@@ -43,6 +43,8 @@ MonoBehaviour:
   - RPC_SetWeapon
   - RPC_PlayShootEffects
   - RPC_FireWeaponEffect
+  - RPC_DestroyPickup
+  - RPC_DestroyBattery
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1
