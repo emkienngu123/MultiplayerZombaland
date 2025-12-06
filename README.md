@@ -83,4 +83,8 @@ For Photon PUN 2 support, visit: https://www.photonengine.com/
 
 ---
 
+ShaKk add cheating feature and test the whole finding for bug
+Thiện fix bug and design new zombie
+Kiệt fix zombie nav mesh and code script for new zombie
+
 Happy developing! 🧟‍♂️
