@@ -1,7 +1,9 @@
+using Photon.Pun; // 1. Add Photon Namespace
 using System;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
-using Photon.Pun; // 1. Add Photon Namespace
+using UnityEngine.EventSystems;
+using TMPro; 
 
 namespace UnityStandardAssets.Characters.FirstPerson
 {
@@ -142,6 +144,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void Update()
         {
+
+
+            if (EventSystem.current.currentSelectedGameObject != null &&
+                EventSystem.current.currentSelectedGameObject.GetComponent<TMP_InputField>() != null)
+            {
+                return;
+            }
             // 4. IMPORTANT: Only run input checks for MY player
             if (!photonView.IsMine) return;
 
@@ -232,6 +241,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private Vector2 GetInput()
         {
+            if (EventSystem.current.currentSelectedGameObject != null &&
+                EventSystem.current.currentSelectedGameObject.GetComponent<TMP_InputField>() != null)
+            {
+                return Vector2.zero;
+            }
+
 
             Vector2 input = new Vector2
             {
