@@ -35,6 +35,8 @@ public class BatteryPickup : MonoBehaviourPun // 2. Inherit from MonoBehaviourPu
 
                 // Fix Health (Replaced FindObjectOfType with GetComponent)
                 PlayerHealth pHealth = other.GetComponent<PlayerHealth>();
+                // Debug.Log("Player pHealth ", pHealth);
+
                 if (pHealth != null)
                 {
                     pHealth.GiveHealth();

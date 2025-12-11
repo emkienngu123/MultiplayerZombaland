@@ -8,7 +8,7 @@ using Photon.Pun;
 
 public class PlayerHealth : MonoBehaviourPun
 {
-    [SerializeField] float hitPoints = 400f;
+    [SerializeField] float hitPoints = 200f;
     private TextMeshProUGUI healthBar;
     [SerializeField] AudioClip deathSound;
     [SerializeField] AudioClip hitSound;
@@ -41,8 +41,11 @@ public class PlayerHealth : MonoBehaviourPun
 
     public void DisplayHealth()
     {
-        float currentHealth = hitPoints / 4;
+        float currentHealth = hitPoints /4;
+        // Debug.Log("Player health: " + currentHealth);
+
         healthBar.text = currentHealth.ToString();
+
     }
 
     [PunRPC]
@@ -84,7 +87,7 @@ public class PlayerHealth : MonoBehaviourPun
 
     public void GiveHealth()
     {
-        hitPoints = 400f;
+        hitPoints = 800f;
     }
 
 }
