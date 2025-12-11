@@ -4,73 +4,35 @@ using UnityEngine;
 
 public class CheatingLine : MonoBehaviour
 {
-    public LineRenderer lineRenderer;
-    private List<LineRenderer> lineToEnemys;
-    private List<Transform> enemyList = new List<Transform>();
-    private Transform playerTransform;
-    private bool isCheating = false;
-
-
-    private IEnumerator Start()
+    private List<Outline> enemyOutlines;
+    private bool isCheating;
+    private void Start()
     {
-        // ⚠ CHỜ CHO PLAYER ĐƯỢC SPAWN
-        yield return new WaitUntil(() => GameObject.FindGameObjectWithTag("Player") != null);
-
-        playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
-
-        lineToEnemys = new List<LineRenderer>();
-        enemyList = new List<Transform>();
-
-        // Load tất cả enemy
+        enemyOutlines = new List<Outline>();
+        isCheating = false;
         GameObject[] objs = GameObject.FindGameObjectsWithTag("Enemy");
         foreach (GameObject obj in objs)
         {
             Transform tf = obj.transform;
-            enemyList.Add(tf);
-
-            LineRenderer lr = Instantiate(lineRenderer);
-            lr.positionCount = 2;
-            lineToEnemys.Add(lr);
+            Outline t = tf.GetComponent<Outline>();
+            enemyOutlines.Add(t);
+            t.enabled = false;
         }
+        SetOutine(isCheating);
     }
-
-
     private void Update()
     {
-        if (playerTransform == null) return; // Player chưa có thì ko chạy
-
         if (Input.GetKeyDown(KeyCode.P))
         {
             isCheating = !isCheating;
-            if (!isCheating)
-            {
-                DisableLine();
-            }
-        }
-
-        if (isCheating)
-        {
-            for (int i = 0; i < enemyList.Count; i++)
-            {
-                SetLine(lineToEnemys[i], enemyList[i].position);
-            }
+            SetOutine(isCheating);
         }
     }
-
-
-    private void SetLine(LineRenderer l, Vector3 enemyPosition)
+    private void SetOutine(bool set)
     {
-        l.SetPosition(0, playerTransform.position);
-        l.SetPosition(1, enemyPosition);
-    }
-
-
-    private void DisableLine()
-    {
-        foreach (LineRenderer lr in lineToEnemys)
+        foreach (Outline ol in enemyOutlines)
         {
-            lr.SetPosition(0, Vector3.zero);
-            lr.SetPosition(1, Vector3.zero);
+            ol.enabled = set;
         }
     }
 }
