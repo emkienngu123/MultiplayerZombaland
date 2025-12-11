@@ -28,6 +28,8 @@ public class EnemyHealth : MonoBehaviourPun
     [PunRPC]
     public void TakeDamage(float damage)
     {
+        Debug.Log($"EnemyHealth ({gameObject.name}): Took {damage} damage. Remaining HP: {hitPoints - damage}");
+        
         // This alerts the EnemyAI script (on the same object) to become provoked
         BroadcastMessage("OnDamageTaken");
 
@@ -47,6 +49,7 @@ public class EnemyHealth : MonoBehaviourPun
 
     private void Die()
     {
+        Debug.Log($"EnemyHealth ({gameObject.name}): Die() called! isDead={isDead}");
         if (isDead) { return; }
 
         isDead = true;
